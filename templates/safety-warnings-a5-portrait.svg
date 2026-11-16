@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="148mm"
+     height="210mm"
+     viewBox="0 0 592 840"
+     role="img"
+     aria-labelledby="template-title template-desc">
+  <title id="template-title">Safety &amp; Warnings Information Page Template (A5 Portrait, 148 x 210 mm)</title>
+  <desc id="template-desc">Editable A5 portrait SVG layout template for product manual safety notices, featuring a primary warning banner with general hazard triangle, a caution block, side-by-side Incorrect (X) vs. Correct (Check) visual comparison placeholders, and a pre-use safety checklist.</desc>
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      .sans {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+      }
+      .page-bg { fill: #FFFFFF; }
+      .safe-guide { fill: none; stroke: #E5E7EB; stroke-width: 1; stroke-dasharray: 4 4; }
+      .warning-card { fill: #FFFFFF; stroke: #111827; stroke-width: 1.8; }
+      .warning-header { fill: #111827; }
+      .caution-card { fill: #F9FAFB; stroke: #374151; stroke-width: 1.5; }
+      .caution-header { fill: #374151; }
+      .compare-card { fill: #FFFFFF; stroke: #374151; stroke-width: 1.5; }
+      .placeholder-zone { fill: #F8FAFC; stroke: #94A3B8; stroke-width: 1.4; stroke-dasharray: 5 4; }
+      .checklist-box { fill: #F9FAFB; stroke: #4B5563; stroke-width: 1.3; }
+      .check-square { fill: #FFFFFF; stroke: #111827; stroke-width: 1.5; }
+      .accent-fill { fill: #0F5C6E; }
+      .prohibit-ring { fill: none; stroke: #111827; stroke-width: 2.6; }
+      .divider { stroke: #D1D5DB; stroke-width: 1; }
+      .text-primary { fill: #111827; }
+      .text-secondary { fill: #4B5563; }
+      .text-muted { fill: #64748B; }
+      .text-inverse { fill: #FFFFFF; }
+      .text-accent { fill: #0F5C6E; }
+    ]]></style>
+  </defs>
+
+  <!-- 1. Solid White Page Background & 8 mm (32 units) Safe Margin Guide -->
+  <g id="page-background">
+    <rect class="page-bg" x="0" y="0" width="592" height="840" />
+    <rect id="safe-margin-guide" class="safe-guide" x="32" y="32" width="528" height="776" rx="4" />
+  </g>
+
+  <!-- 2. Page Header -->
+  <g id="page-header" class="sans">
+    <text x="36" y="56" font-size="16" font-weight="700" class="text-primary">[ SAFETY INSTRUCTIONS · 安全警示与注意事项 ]</text>
+    <text x="556" y="56" font-size="10.5" text-anchor="end" class="text-secondary">[ Read Before Use · 使用前必读 ]</text>
+    <line class="divider" x1="36" y1="68" x2="556" y2="68" />
+  </g>
+
+  <!-- 3. Primary WARNING Block (Hazard + Consequence + Avoidance Structure) -->
+  <g id="primary-warning-block" class="sans" transform="translate(36, 84)">
+    <rect class="warning-card" x="0" y="0" width="520" height="148" rx="8" />
+    <rect class="warning-header" x="0" y="0" width="520" height="34" rx="8" />
+    <rect class="warning-header" x="0" y="18" width="520" height="16" />
+
+    <!-- Header Signal Triangle & Signal Word -->
+    <polygon points="26,8 37,27 15,27" fill="#FFFFFF" />
+    <text x="26" y="25" font-size="13" font-weight="800" text-anchor="middle" class="text-primary">!</text>
+    <text x="48" y="23" font-size="13" font-weight="700" class="text-inverse">WARNING · 警告</text>
+    <text x="504" y="22" font-size="9.5" text-anchor="end" class="text-inverse">[ Signal Word Placeholder ]</text>
+
+    <!-- Left General Hazard Pictogram Slot -->
+    <g id="warning-icon-placeholder" transform="translate(18, 48)">
+      <rect class="placeholder-zone" x="0" y="0" width="76" height="82" rx="6" />
+      <polygon points="38,14 64,58 12,58" fill="none" stroke="#111827" stroke-width="2.4" stroke-linejoin="round" />
+      <text x="38" y="52" font-size="22" font-weight="800" text-anchor="middle" class="text-primary">!</text>
+      <text x="38" y="74" font-size="8.5" text-anchor="middle" class="text-muted">[ Hazard Icon ]</text>
+    </g>
+
+    <!-- Three-Part Structured Safety Copy Placeholder -->
+    <text x="110" y="62" font-size="11.5" font-weight="700" class="text-primary">[ Hazard Source · 风险源说明占位（如倾倒风险 / 带电部件 / 夹手位） ]</text>
+    <text x="110" y="82" font-size="10.5" class="text-secondary">• [ Consequence: Serious injury or damage may occur if ignored. ]</text>
+    <text x="110" y="100" font-size="10.5" class="text-secondary">• [ Avoidance: Disconnect power / anchor strap before operation. ]</text>
+    <text x="110" y="118" font-size="10.5" class="text-secondary">• [ 中文占位：写明具体风险、忽视后果及正确规避动作。 ]</text>
+    <text x="110" y="137" font-size="9" class="text-muted">[ Keep 35%+ expansion space; verify wording against target-market standards ]</text>
+  </g>
+
+  <!-- 4. Secondary CAUTION Block -->
+  <g id="secondary-caution-block" class="sans" transform="translate(36, 246)">
+    <rect class="caution-card" x="0" y="0" width="520" height="106" rx="8" />
+    <rect class="caution-header" x="0" y="0" width="520" height="28" rx="8" />
+    <rect class="caution-header" x="0" y="16" width="520" height="12" />
+    <text x="18" y="19" font-size="11.5" font-weight="700" class="text-inverse">CAUTION · 注意</text>
+    <text x="504" y="19" font-size="9" text-anchor="end" class="text-inverse">[ Minor Injury / Product Damage Prevention ]</text>
+
+    <rect class="placeholder-zone" x="18" y="38" width="56" height="56" rx="6" />
+    <circle class="prohibit-ring" cx="46" cy="66" r="18" />
+    <line stroke="#111827" stroke-width="2.6" x1="33" y1="53" x2="59" y2="79" />
+
+    <text x="90" y="54" font-size="11" font-weight="700" class="text-primary">[ Prohibited Action / Handling Caution · 禁止操作或使用注意占位 ]</text>
+    <text x="90" y="72" font-size="10" class="text-secondary">[ Example: Turn off water supply before removing cartridge; do not touch sensor adhesive. ]</text>
+    <text x="90" y="90" font-size="10" class="text-secondary">[ 占位示例：更换部件前先关闭水源/气源；请勿使用超载重物或强腐蚀清洁剂。 ]</text>
+  </g>
+
+  <!-- 5. Side-by-Side "Almost Right" Comparison Panels (Incorrect X vs. Correct Check) -->
+  <g id="comparison-panels" class="sans" transform="translate(36, 368)">
+    <text x="0" y="14" font-size="12" font-weight="700" class="text-primary">DO NOT vs. CORRECT STATE · 错误姿态与正确锁定对比（黑白印刷亦可清晰分辨）</text>
+
+    <!-- Left Panel: INCORRECT / FORBIDDEN (X) -->
+    <g id="incorrect-state-panel" transform="translate(0, 26)">
+      <rect class="compare-card" x="0" y="0" width="252" height="236" rx="8" />
+      <!-- Symbol Badge (Never rely on color alone) -->
+      <circle cx="28" cy="28" r="14" fill="#111827" />
+      <path d="M22.5 22.5 L33.5 33.5 M33.5 22.5 L22.5 33.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" />
+      <text x="50" y="27" font-size="11.5" font-weight="700" class="text-primary">INCORRECT · 错误示例</text>
+      <text x="50" y="41" font-size="9.5" class="text-muted">[ Unlatched / Loose / Tipping ]</text>
+
+      <!-- Placeholder Figure Area -->
+      <rect class="placeholder-zone" x="16" y="54" width="220" height="132" rx="6" />
+      <text x="126" y="114" font-size="11" font-weight="700" text-anchor="middle" class="text-primary">[ Forbidden / Unsafe Figure ]</text>
+      <text x="126" y="132" font-size="9.5" text-anchor="middle" class="text-secondary">危险或未到位状态线稿占位</text>
+      <text x="126" y="148" font-size="9" text-anchor="middle" class="text-muted">（放大画出半插、未锁紧或松弛细节）</text>
+
+      <text x="16" y="206" font-size="10" font-weight="600" class="text-primary">[ Do NOT use if latch is open or loose. ]</text>
+      <text x="16" y="222" font-size="9.5" class="text-secondary">[ 锁扣未归位或未固定时严禁使用。 ]</text>
+    </g>
+
+    <!-- Right Panel: CORRECT / VERIFIED (Check) -->
+    <g id="correct-state-panel" transform="translate(268, 26)">
+      <rect class="compare-card" x="0" y="0" width="252" height="236" rx="8" />
+      <circle class="accent-fill" cx="28" cy="28" r="14" />
+      <path d="M21.5 28.5 L26 33 L34.5 23.5" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="50" y="27" font-size="11.5" font-weight="700" class="text-accent">CORRECT · 正确状态</text>
+      <text x="50" y="41" font-size="9.5" class="text-muted">[ Locked / Snug / Anchored ]</text>
+
+      <!-- Placeholder Figure Area -->
+      <rect class="placeholder-zone" x="16" y="54" width="220" height="132" rx="6" />
+      <text x="126" y="114" font-size="11" font-weight="700" text-anchor="middle" class="text-primary">[ Safe / Verified Figure ]</text>
+      <text x="126" y="132" font-size="9.5" text-anchor="middle" class="text-secondary">安全到位状态线稿占位</text>
+      <text x="126" y="148" font-size="9" text-anchor="middle" class="text-muted">（标出 CLICK 锁定、齐平或防倾倒固定）</text>
+
+      <text x="16" y="206" font-size="10" font-weight="600" class="text-primary">[ Confirm lock clicks and load ≤ limit. ]</text>
+      <text x="16" y="222" font-size="9.5" class="text-secondary">[ 确认锁扣咔哒到位且承重不超过上限。 ]</text>
+    </g>
+  </g>
+
+  <!-- 6. Pre-Use Verification Checklist Box -->
+  <g id="safety-checklist-box" class="sans" transform="translate(36, 646)">
+    <rect class="checklist-box" x="0" y="0" width="520" height="114" rx="8" />
+    <text x="16" y="22" font-size="11.5" font-weight="700" class="text-primary">PRE-USE SAFETY CHECK · 启用前安全核对清单</text>
+
+    <rect class="check-square" x="16" y="34" width="14" height="14" rx="2" />
+    <text x="38" y="45" font-size="10.5" class="text-secondary">[ All fasteners, guards, and latches are fully tightened and locked in place · 所有紧固件与护罩已锁紧 ]</text>
+
+    <rect class="check-square" x="16" y="58" width="14" height="14" rx="2" />
+    <text x="38" y="69" font-size="10.5" class="text-secondary">[ Wall anchor / brake / seal check passed with zero play or leakage · 防倾倒/刹车/密封检查无异常 ]</text>
+
+    <rect class="check-square" x="16" y="82" width="14" height="14" rx="2" />
+    <text x="38" y="93" font-size="10.5" class="text-secondary">[ Operating load, age/environment limits, and warnings reviewed · 已核对承重及适用环境限制 ]</text>
+  </g>
+
+  <!-- 7. Footer Compliance Reminder -->
+  <g id="page-footer" class="sans">
+    <line class="divider" x1="36" y1="774" x2="556" y2="774" />
+    <text x="36" y="794" font-size="9" class="text-muted">[ Note: Verify all safety symbols, signal words, and statutory disclosures against target-market standards. ]</text>
+    <text x="36" y="808" font-size="9" class="text-muted">[ 提示：具体安全标识图形、信号词与强制声明请按目标市场适用的安全标识和说明书标准核对。 ]</text>
+    <text x="556" y="800" font-size="10.5" font-weight="600" text-anchor="end" class="text-secondary">Page 4 / N</text>
+  </g>
+</svg>

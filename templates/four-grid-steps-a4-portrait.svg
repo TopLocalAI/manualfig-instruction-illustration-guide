@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="210mm"
+     height="297mm"
+     viewBox="0 0 840 1188"
+     role="img"
+     aria-labelledby="template-title template-desc">
+  <title id="template-title">Four-Grid Step Sequence Page Template (A4 Portrait, 210 x 297 mm)</title>
+  <desc id="template-desc">Editable 2x2 grid SVG layout template for product assembly or user manual steps, including pre-assembly tool/setup bar, four numbered step panels with illustration placeholders, hardware sub-boxes, detail zoom circles, caption blocks, and motion arrow legend.</desc>
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      .sans {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+      }
+      .page-bg { fill: #FFFFFF; }
+      .safe-guide { fill: none; stroke: #E5E7EB; stroke-width: 1; stroke-dasharray: 5 5; }
+      .panel-card { fill: #FFFFFF; stroke: #374151; stroke-width: 1.6; }
+      .strip-box { fill: #F9FAFB; stroke: #4B5563; stroke-width: 1.2; }
+      .placeholder-zone { fill: #F8FAFC; stroke: #94A3B8; stroke-width: 1.5; stroke-dasharray: 6 4; }
+      .placeholder-mini { fill: #EEF2F6; stroke: #64748B; stroke-width: 1.2; stroke-dasharray: 4 3; }
+      .caption-box { fill: #F9FAFB; stroke: #D1D5DB; stroke-width: 1; }
+      .accent-fill { fill: #0F5C6E; }
+      .accent-ring { fill: #FFFFFF; stroke: #0F5C6E; stroke-width: 2; }
+      .divider { stroke: #D1D5DB; stroke-width: 1; }
+      .text-primary { fill: #111827; }
+      .text-secondary { fill: #4B5563; }
+      .text-muted { fill: #64748B; }
+      .text-inverse { fill: #FFFFFF; }
+      .text-accent { fill: #0F5C6E; }
+    ]]></style>
+  </defs>
+
+  <!-- 1. Solid White Page Canvas & 10 mm (40 units) Safe Margin Guide -->
+  <g id="page-background">
+    <rect class="page-bg" x="0" y="0" width="840" height="1188" />
+    <rect id="safe-margin-guide" class="safe-guide" x="40" y="40" width="760" height="1108" rx="4" />
+  </g>
+
+  <!-- 2. Page Header & Pre-Assembly Strip -->
+  <g id="page-header" class="sans">
+    <text x="48" y="68" font-size="18" font-weight="700" class="text-primary">[ SECTION TITLE · 装配 / 操作步骤标题占位 ]</text>
+    <text x="792" y="68" font-size="12" text-anchor="end" class="text-secondary">[ Model SKU-000 · Rev 1.0 ]</text>
+    <line class="divider" x1="48" y1="82" x2="792" y2="82" />
+
+    <!-- Pre-Assembly Tool & Environment Strip -->
+    <rect class="strip-box" x="48" y="96" width="744" height="54" rx="8" />
+    <text x="66" y="127" font-size="11.5" font-weight="700" class="text-primary">BEFORE YOU START · 开始前准备：</text>
+    <rect class="placeholder-mini" x="268" y="106" width="148" height="34" rx="4" />
+    <text x="342" y="127" font-size="10.5" text-anchor="middle" class="text-secondary">[ Tools · 自备工具图标 ]</text>
+    <rect class="placeholder-mini" x="430" y="106" width="154" height="34" rx="4" />
+    <text x="507" y="127" font-size="10.5" text-anchor="middle" class="text-secondary">[ Persons · 建议人数图标 ]</text>
+    <rect class="placeholder-mini" x="598" y="106" width="178" height="34" rx="4" />
+    <text x="687" y="127" font-size="10.5" text-anchor="middle" class="text-secondary">[ Soft Mat · 铺垫防刮提示 ]</text>
+  </g>
+
+  <!-- 3. Four-Grid Step Panels (2 Columns x 2 Rows, LTR Reading Order 1 -> 2 -> 3 -> 4) -->
+  <g id="step-grid" class="sans">
+
+    <!-- ==================== PANEL 1 (Top-Left) ==================== -->
+    <g id="step-panel-1" transform="translate(48, 168)">
+      <rect class="panel-card" x="0" y="0" width="360" height="444" rx="10" />
+      <circle class="accent-fill" cx="30" cy="30" r="18" />
+      <text x="30" y="36" font-size="17" font-weight="700" text-anchor="middle" class="text-inverse">1</text>
+      <text x="58" y="28" font-size="13.5" font-weight="700" class="text-primary">[ Step 1 Action · 第 1 步动作 ]</text>
+      <text x="58" y="44" font-size="10.5" class="text-muted">[ One action only · 单一主动作 ]</text>
+
+      <!-- Main Figure Placeholder -->
+      <rect class="placeholder-zone" x="16" y="60" width="328" height="278" rx="6" />
+      <text x="140" y="192" font-size="12" font-weight="700" text-anchor="middle" class="text-primary">[ Step 1 Figure ]</text>
+      <text x="140" y="210" font-size="10.5" text-anchor="middle" class="text-secondary">第 1 步插图占位矩形</text>
+
+      <!-- Hardware Callout Mini-Box -->
+      <rect class="strip-box" x="252" y="72" width="80" height="86" rx="6" />
+      <text x="292" y="90" font-size="10.5" font-weight="700" text-anchor="middle" class="text-primary">A ×4</text>
+      <rect class="placeholder-mini" x="262" y="96" width="60" height="40" rx="3" />
+      <text x="292" y="120" font-size="9" text-anchor="middle" class="text-muted">[ Fastener ]</text>
+      <text x="292" y="150" font-size="8.5" text-anchor="middle" class="text-secondary">[ Ø8×30 ]</text>
+
+      <!-- Magnifier Inset Circle -->
+      <circle class="accent-ring" cx="288" cy="272" r="46" />
+      <text x="288" y="269" font-size="10" font-weight="700" text-anchor="middle" class="text-accent">[ 3× Zoom ]</text>
+      <text x="288" y="284" font-size="9" text-anchor="middle" class="text-muted">局部细节放大</text>
+
+      <!-- Caption Frame with Expansion Headroom -->
+      <rect class="caption-box" x="16" y="350" width="328" height="78" rx="6" />
+      <text x="28" y="372" font-size="11" font-weight="600" class="text-primary">[ Step 1 caption placeholder · 步骤 1 文字说明占位 ]</text>
+      <text x="28" y="390" font-size="10" class="text-secondary">[ Describe part, direction, and seating check concisely. ]</text>
+      <text x="28" y="412" font-size="9" class="text-muted">[ +35%–50% localization headroom · 多语种排版余量 ]</text>
+    </g>
+
+    <!-- ==================== PANEL 2 (Top-Right) ==================== -->
+    <g id="step-panel-2" transform="translate(432, 168)">
+      <rect class="panel-card" x="0" y="0" width="360" height="444" rx="10" />
+      <circle class="accent-fill" cx="30" cy="30" r="18" />
+      <text x="30" y="36" font-size="17" font-weight="700" text-anchor="middle" class="text-inverse">2</text>
+      <text x="58" y="28" font-size="13.5" font-weight="700" class="text-primary">[ Step 2 Action · 第 2 步动作 ]</text>
+      <text x="58" y="44" font-size="10.5" class="text-muted">[ Keep camera angle · 保持相同视角 ]</text>
+
+      <!-- Main Figure Placeholder -->
+      <rect class="placeholder-zone" x="16" y="60" width="328" height="278" rx="6" />
+      <text x="140" y="192" font-size="12" font-weight="700" text-anchor="middle" class="text-primary">[ Step 2 Figure ]</text>
+      <text x="140" y="210" font-size="10.5" text-anchor="middle" class="text-secondary">第 2 步插图占位矩形</text>
+
+      <!-- Hardware Callout Mini-Box -->
+      <rect class="strip-box" x="252" y="72" width="80" height="86" rx="6" />
+      <text x="292" y="90" font-size="10.5" font-weight="700" text-anchor="middle" class="text-primary">B ×4</text>
+      <rect class="placeholder-mini" x="262" y="96" width="60" height="40" rx="3" />
+      <text x="292" y="120" font-size="9" text-anchor="middle" class="text-muted">[ Cam Lock ]</text>
+      <text x="292" y="150" font-size="8.5" text-anchor="middle" class="text-secondary">[ 偏心轮占位 ]</text>
+
+      <!-- Correct / Incorrect Mini Pair -->
+      <rect class="strip-box" x="218" y="240" width="114" height="86" rx="6" />
+      <text x="247" y="258" font-size="11" font-weight="700" text-anchor="middle" class="text-accent">✓</text>
+      <text x="303" y="258" font-size="11" font-weight="700" text-anchor="middle" class="text-primary">✗</text>
+      <line class="divider" x1="275" y1="246" x2="275" y2="318" />
+      <rect class="placeholder-mini" x="226" y="264" width="42" height="52" rx="3" />
+      <rect class="placeholder-mini" x="282" y="264" width="42" height="52" rx="3" />
+
+      <!-- Caption Frame -->
+      <rect class="caption-box" x="16" y="350" width="328" height="78" rx="6" />
+      <text x="28" y="372" font-size="11" font-weight="600" class="text-primary">[ Step 2 caption placeholder · 步骤 2 文字说明占位 ]</text>
+      <text x="28" y="390" font-size="10" class="text-secondary">[ Align arrow mark on part (B) before tightening clockwise. ]</text>
+      <text x="28" y="412" font-size="9" class="text-muted">[ +35%–50% localization headroom · 多语种排版余量 ]</text>
+    </g>
+
+    <!-- ==================== PANEL 3 (Bottom-Left) ==================== -->
+    <g id="step-panel-3" transform="translate(48, 632)">
+      <rect class="panel-card" x="0" y="0" width="360" height="444" rx="10" />
+      <circle class="accent-fill" cx="30" cy="30" r="18" />
+      <text x="30" y="36" font-size="17" font-weight="700" text-anchor="middle" class="text-inverse">3</text>
+      <text x="58" y="28" font-size="13.5" font-weight="700" class="text-primary">[ Step 3 Action · 第 3 步动作 ]</text>
+      <text x="58" y="44" font-size="10.5" class="text-muted">[ Add turnover icon if flipped · 若翻面需标翻转图标 ]</text>
+
+      <!-- Main Figure Placeholder -->
+      <rect class="placeholder-zone" x="16" y="60" width="328" height="278" rx="6" />
+      <text x="145" y="192" font-size="12" font-weight="700" text-anchor="middle" class="text-primary">[ Step 3 Figure ]</text>
+      <text x="145" y="210" font-size="10.5" text-anchor="middle" class="text-secondary">第 3 步插图占位矩形</text>
+
+      <!-- Optional Turnover Cue Badge -->
+      <rect class="strip-box" x="28" y="72" width="76" height="44" rx="6" />
+      <text x="66" y="92" font-size="10" font-weight="700" text-anchor="middle" class="text-accent">↻ 180°</text>
+      <text x="66" y="107" font-size="8.5" text-anchor="middle" class="text-secondary">[ Flip Cue ]</text>
+
+      <!-- Magnifier Inset Circle -->
+      <circle class="accent-ring" cx="288" cy="272" r="46" />
+      <text x="288" y="269" font-size="10" font-weight="700" text-anchor="middle" class="text-accent">[ 3× Zoom ]</text>
+      <text x="288" y="284" font-size="9" text-anchor="middle" class="text-muted">局部细节放大</text>
+
+      <!-- Caption Frame -->
+      <rect class="caption-box" x="16" y="350" width="328" height="78" rx="6" />
+      <text x="28" y="372" font-size="11" font-weight="600" class="text-primary">[ Step 3 caption placeholder · 步骤 3 文字说明占位 ]</text>
+      <text x="28" y="390" font-size="10" class="text-secondary">[ Press latch until an audible click confirms engagement. ]</text>
+      <text x="28" y="412" font-size="9" class="text-muted">[ +35%–50% localization headroom · 多语种排版余量 ]</text>
+    </g>
+
+    <!-- ==================== PANEL 4 (Bottom-Right) ==================== -->
+    <g id="step-panel-4" transform="translate(432, 632)">
+      <rect class="panel-card" x="0" y="0" width="360" height="444" rx="10" />
+      <circle class="accent-fill" cx="30" cy="30" r="18" />
+      <text x="30" y="36" font-size="17" font-weight="700" text-anchor="middle" class="text-inverse">4</text>
+      <text x="58" y="28" font-size="13.5" font-weight="700" class="text-primary">[ Step 4 Final Check · 第 4 步检查 ]</text>
+      <text x="58" y="44" font-size="10.5" class="text-muted">[ Completion &amp; safety check · 完成态与安全核对 ]</text>
+
+      <!-- Main Figure Placeholder -->
+      <rect class="placeholder-zone" x="16" y="60" width="328" height="278" rx="6" />
+      <text x="135" y="192" font-size="12" font-weight="700" text-anchor="middle" class="text-primary">[ Step 4 Figure ]</text>
+      <text x="135" y="210" font-size="10.5" text-anchor="middle" class="text-secondary">第 4 步完成态占位矩形</text>
+
+      <!-- Point-of-Risk Caution / Load Callout Box -->
+      <rect class="strip-box" x="226" y="72" width="106" height="90" rx="6" />
+      <polygon points="279,82 293,106 265,106" fill="none" stroke="#111827" stroke-width="1.8" stroke-linejoin="round" />
+      <text x="279" y="103" font-size="12" font-weight="700" text-anchor="middle" class="text-primary">!</text>
+      <text x="279" y="124" font-size="9.5" font-weight="700" text-anchor="middle" class="text-primary">[ MAX. XX kg ]</text>
+      <text x="279" y="140" font-size="8.5" text-anchor="middle" class="text-secondary">[ 承重/安全提示 ]</text>
+      <text x="279" y="153" font-size="8" text-anchor="middle" class="text-muted">[ 就近展示风险 ]</text>
+
+      <!-- Completion Check Badge -->
+      <rect class="strip-box" x="226" y="256" width="106" height="68" rx="6" />
+      <circle class="accent-fill" cx="250" cy="290" r="12" />
+      <path d="M244.5 290 L248.5 294 L256 286" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="270" y="287" font-size="10" font-weight="700" class="text-primary">COMPLETE</text>
+      <text x="270" y="302" font-size="9" class="text-secondary">安装完成确认</text>
+
+      <!-- Caption Frame -->
+      <rect class="caption-box" x="16" y="350" width="328" height="78" rx="6" />
+      <text x="28" y="372" font-size="11" font-weight="600" class="text-primary">[ Step 4 caption placeholder · 步骤 4 文字说明占位 ]</text>
+      <text x="28" y="390" font-size="10" class="text-secondary">[ Verify stability, lock engagement, and safe clearance. ]</text>
+      <text x="28" y="412" font-size="9" class="text-muted">[ +35%–50% localization headroom · 多语种排版余量 ]</text>
+    </g>
+  </g>
+
+  <!-- 4. Footer Bar: Motion Legend & Pagination -->
+  <g id="page-footer" class="sans">
+    <line class="divider" x1="48" y1="1096" x2="792" y2="1096" />
+    <text x="48" y="1124" font-size="10.5" font-weight="700" class="text-primary">LEGEND · 图例：</text>
+
+    <!-- Linear Arrow -->
+    <line x1="152" y1="1120" x2="178" y2="1120" stroke="#0F5C6E" stroke-width="3" stroke-linecap="round" />
+    <polygon points="178,1115 188,1120 178,1125" fill="#0F5C6E" />
+    <text x="195" y="1124" font-size="10.5" class="text-secondary">Linear Motion · 推/拉方向</text>
+
+    <!-- Rotational Arrow -->
+    <path d="M352 1124 A11 6.5 0 1 1 374 1118" fill="none" stroke="#0F5C6E" stroke-width="2.5" stroke-linecap="round" />
+    <polygon points="372,1113 380,1119 370,1122" fill="#0F5C6E" />
+    <text x="388" y="1124" font-size="10.5" class="text-secondary">Rotate / Tighten · 旋转拧紧</text>
+
+    <!--Explosion Axis -->
+    <line x1="556" y1="1120" x2="590" y2="1120" stroke="#4B5563" stroke-width="1.4" stroke-dasharray="4 3" />
+    <text x="598" y="1124" font-size="10.5" class="text-secondary">Alignment Axis · 对位轴线</text>
+
+    <text x="792" y="1124" font-size="11" font-weight="600" text-anchor="end" class="text-secondary">Page 2 / N</text>
+  </g>
+</svg>

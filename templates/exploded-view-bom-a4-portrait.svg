@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="210mm"
+     height="297mm"
+     viewBox="0 0 840 1188"
+     role="img"
+     aria-labelledby="template-title template-desc">
+  <title id="template-title">Exploded View &amp; Bill of Materials (BOM) Page Template (A4 Portrait, 210 x 297 mm)</title>
+  <desc id="template-desc">Editable A4 portrait SVG layout template featuring an exploded-view illustration canvas with placeholder sub-assemblies, coaxial dashed explosion trace lines, aligned non-crossing item balloons (1 to 6), a 1:1 fastener scale bar, and a structured Bill of Materials table.</desc>
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      .sans {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+      }
+      .page-bg { fill: #FFFFFF; }
+      .safe-guide { fill: none; stroke: #E5E7EB; stroke-width: 1; stroke-dasharray: 5 5; }
+      .canvas-border { fill: #FFFFFF; stroke: #374151; stroke-width: 1.6; }
+      .placeholder-part { fill: #F8FAFC; stroke: #64748B; stroke-width: 1.5; stroke-dasharray: 6 4; }
+      .explosion-axis { fill: none; stroke: #4B5563; stroke-width: 1.2; stroke-dasharray: 5 4; }
+      .leader-halo { fill: none; stroke: #FFFFFF; stroke-width: 4; }
+      .leader-solid { fill: none; stroke: #111827; stroke-width: 1.1; }
+      .leader-dot { fill: #111827; }
+      .balloon-circle { fill: #FFFFFF; stroke: #111827; stroke-width: 1.6; }
+      .table-outer { fill: #FFFFFF; stroke: #374151; stroke-width: 1.5; }
+      .table-header { fill: #0F5C6E; }
+      .table-row-alt { fill: #F9FAFB; }
+      .table-grid { stroke: #D1D5DB; stroke-width: 1; }
+      .scale-box { fill: #F9FAFB; stroke: #4B5563; stroke-width: 1.2; }
+      .divider { stroke: #D1D5DB; stroke-width: 1; }
+      .text-primary { fill: #111827; }
+      .text-secondary { fill: #4B5563; }
+      .text-muted { fill: #64748B; }
+      .text-inverse { fill: #FFFFFF; }
+    ]]></style>
+  </defs>
+
+  <!-- 1. Solid White Page Background & Safe Margin Guide -->
+  <g id="page-background">
+    <rect class="page-bg" x="0" y="0" width="840" height="1188" />
+    <rect id="safe-margin-guide" class="safe-guide" x="40" y="40" width="760" height="1108" rx="4" />
+  </g>
+
+  <!-- 2. Header -->
+  <g id="page-header" class="sans">
+    <text x="48" y="68" font-size="18" font-weight="700" class="text-primary">[ EXPLODED VIEW &amp; PARTS LIST · 爆炸视图与物料清单（BOM） ]</text>
+    <text x="792" y="68" font-size="12" text-anchor="end" class="text-secondary">[ Product Model / Assembly ID ]</text>
+    <line class="divider" x1="48" y1="82" x2="792" y2="82" />
+  </g>
+
+  <!-- 3. Upper Exploded View Illustration Canvas -->
+  <g id="exploded-view-canvas" class="sans">
+    <rect class="canvas-border" x="48" y="98" width="744" height="546" rx="10" />
+    <text x="68" y="124" font-size="11" font-weight="600" class="text-muted">[ Exploded Assembly Canvas · 沿真实装配轴线分层拉开组件，球标排成整齐行列且引出线零交叉 ]</text>
+
+    <!-- Coaxial Dashed Explosion Trace Lines -->
+    <g id="explosion-trace-lines">
+      <line class="explosion-axis" x1="420" y1="184" x2="420" y2="574" />
+      <line class="explosion-axis" x1="286" y1="226" x2="286" y2="516" />
+      <line class="explosion-axis" x1="554" y1="226" x2="554" y2="516" />
+    </g>
+
+    <!-- Placeholder Sub-Assembly Modules Along Axis -->
+    <g id="exploded-part-placeholders">
+      <!-- Top Fastener Group (Item 1) -->
+      <rect class="placeholder-part" x="260" y="152" width="52" height="36" rx="4" />
+      <rect class="placeholder-part" x="528" y="152" width="52" height="36" rx="4" />
+      <text x="286" y="174" font-size="9.5" text-anchor="middle" class="text-muted">[ Screw ]</text>
+      <text x="554" y="174" font-size="9.5" text-anchor="middle" class="text-muted">[ Screw ]</text>
+
+      <!-- Top Cover Sub-Assembly (Item 2) -->
+      <rect class="placeholder-part" x="248" y="214" width="344" height="68" rx="8" />
+      <text x="420" y="246" font-size="11.5" font-weight="700" text-anchor="middle" class="text-primary">[ Upper Cover Placeholder · 上盖组件占位区 ]</text>
+      <text x="420" y="264" font-size="10" text-anchor="middle" class="text-muted">[ Replace rectangle with isometric top cover line art ]</text>
+
+      <!-- Seal / Gasket Ring (Item 3) -->
+      <rect class="placeholder-part" x="296" y="308" width="248" height="44" rx="18" />
+      <text x="420" y="334" font-size="10.5" font-weight="600" text-anchor="middle" class="text-secondary">[ Seal / Gasket Placeholder · 密封圈占位 ]</text>
+
+      <!-- Core Module / Filter / Internal Assembly (Item 4) -->
+      <rect class="placeholder-part" x="272" y="378" width="296" height="96" rx="8" />
+      <text x="420" y="422" font-size="11.5" font-weight="700" text-anchor="middle" class="text-primary">[ Core Sub-Assembly Placeholder · 核心模块占位 ]</text>
+      <text x="420" y="440" font-size="10" text-anchor="middle" class="text-muted">[ Group sub-parts logically; avoid starburst clutter ]</text>
+
+      <!-- Base Housing (Item 5) -->
+      <rect class="placeholder-part" x="236" y="502" width="368" height="82" rx="8" />
+      <text x="420" y="542" font-size="11.5" font-weight="700" text-anchor="middle" class="text-primary">[ Base Housing Placeholder · 底座壳体占位区 ]</text>
+      <text x="420" y="560" font-size="10" text-anchor="middle" class="text-muted">[ Maintain identical scale across exploded modules ]</text>
+
+      <!-- Side Retaining Clip / Bracket (Item 6) -->
+      <rect class="placeholder-part" x="620" y="394" width="64" height="64" rx="6" />
+      <text x="652" y="424" font-size="9.5" text-anchor="middle" class="text-muted">[ Clip ]</text>
+      <text x="652" y="438" font-size="9" text-anchor="middle" class="text-muted">[ 卡扣占位 ]</text>
+    </g>
+
+    <!-- Aligned Left & Right Item Balloons (1 to 6, Zero Crossing Leaders) -->
+    <g id="item-balloons">
+      <!-- Balloon 1 (Left Row 1 -> Top Screw) -->
+      <line class="leader-halo" x1="138" y1="170" x2="268" y2="170" />
+      <line class="leader-solid" x1="138" y1="170" x2="268" y2="170" />
+      <circle class="leader-dot" cx="268" cy="170" r="3" />
+      <circle class="balloon-circle" cx="120" cy="170" r="18" />
+      <text x="120" y="175" font-size="14" font-weight="700" text-anchor="middle" class="text-primary">1</text>
+
+      <!-- Balloon 2 (Left Row 2 -> Upper Cover) -->
+      <line class="leader-halo" x1="138" y1="248" x2="258" y2="248" />
+      <line class="leader-solid" x1="138" y1="248" x2="258" y2="248" />
+      <circle class="leader-dot" cx="258" cy="248" r="3" />
+      <circle class="balloon-circle" cx="120" cy="248" r="18" />
+      <text x="120" y="253" font-size="14" font-weight="700" text-anchor="middle" class="text-primary">2</text>
+
+      <!-- Balloon 3 (Left Row 3 -> Seal Ring) -->
+      <line class="leader-halo" x1="138" y1="330" x2="306" y2="330" />
+      <line class="leader-solid" x1="138" y1="330" x2="306" y2="330" />
+      <circle class="leader-dot" cx="306" cy="330" r="3" />
+      <circle class="balloon-circle" cx="120" cy="330" r="18" />
+      <text x="120" y="335" font-size="14" font-weight="700" text-anchor="middle" class="text-primary">3</text>
+
+      <!-- Balloon 4 (Left Row 4 -> Core Module) -->
+      <line class="leader-halo" x1="138" y1="426" x2="282" y2="426" />
+      <line class="leader-solid" x1="138" y1="426" x2="282" y2="426" />
+      <circle class="leader-dot" cx="282" cy="426" r="3" />
+      <circle class="balloon-circle" cx="120" cy="426" r="18" />
+      <text x="120" y="431" font-size="14" font-weight="700" text-anchor="middle" class="text-primary">4</text>
+
+      <!-- Balloon 5 (Left Row 5 -> Base Housing) -->
+      <line class="leader-halo" x1="138" y1="542" x2="248" y2="542" />
+      <line class="leader-solid" x1="138" y1="542" x2="248" y2="542" />
+      <circle class="leader-dot" cx="248" cy="542" r="3" />
+      <circle class="balloon-circle" cx="120" cy="542" r="18" />
+      <text x="120" y="547" font-size="14" font-weight="700" text-anchor="middle" class="text-primary">5</text>
+
+      <!-- Balloon 6 (Right Column -> Side Retaining Clip) -->
+      <line class="leader-halo" x1="674" y1="426" x2="714" y2="426" />
+      <line class="leader-solid" x1="674" y1="426" x2="714" y2="426" />
+      <circle class="leader-dot" cx="674" cy="426" r="3" />
+      <circle class="balloon-circle" cx="732" cy="426" r="18" />
+      <text x="732" y="431" font-size="14" font-weight="700" text-anchor="middle" class="text-primary">6</text>
+    </g>
+
+    <!-- Optional 1:1 Actual-Size Fastener Ruler Strip (50 mm = 200 units at 4 units/mm) -->
+    <g id="fastener-scale-bar" transform="translate(520, 594)">
+      <rect class="scale-box" x="0" y="0" width="252" height="36" rx="4" />
+      <text x="12" y="15" font-size="9" font-weight="700" class="text-primary">1:1 FASTENER CHECK (50 mm at A4 100%)</text>
+      <line stroke="#111827" stroke-width="1.2" x1="12" y1="26" x2="212" y2="26" />
+      <line stroke="#111827" stroke-width="1.2" x1="12" y1="20" x2="12" y2="26" />
+      <line stroke="#111827" stroke-width="1" x1="52" y1="22" x2="52" y2="26" />
+      <line stroke="#111827" stroke-width="1" x1="92" y1="22" x2="92" y2="26" />
+      <line stroke="#111827" stroke-width="1" x1="132" y1="22" x2="132" y2="26" />
+      <line stroke="#111827" stroke-width="1" x1="172" y1="22" x2="172" y2="26" />
+      <line stroke="#111827" stroke-width="1.2" x1="212" y1="20" x2="212" y2="26" />
+      <text x="220" y="29" font-size="8.5" class="text-secondary">50 mm</text>
+    </g>
+  </g>
+
+  <!-- 4. Structured Bill of Materials (BOM) Table -->
+  <g id="bom-table" class="sans" transform="translate(48, 664)">
+    <text x="0" y="18" font-size="14" font-weight="700" class="text-primary">BILL OF MATERIALS (BOM) · 物料与零件清单</text>
+    <text x="744" y="18" font-size="10.5" text-anchor="end" class="text-muted">[ Ensure 100% ID &amp; Qty parity with hardware bags and step panels ]</text>
+
+    <!-- Table Container -->
+    <rect class="table-outer" x="0" y="28" width="744" height="364" rx="6" />
+    <rect class="table-header" x="0" y="28" width="744" height="40" rx="6" />
+    <rect class="table-header" x="0" y="48" width="744" height="20" />
+
+    <!-- Alternating Row Fills (6 Rows x 54 units height) -->
+    <rect class="table-row-alt" x="1" y="122" width="742" height="54" />
+    <rect class="table-row-alt" x="1" y="230" width="742" height="54" />
+    <rect class="table-row-alt" x="1" y="338" width="742" height="53" />
+
+    <!-- Horizontal Row Dividers -->
+    <line class="table-grid" x1="0" y1="122" x2="744" y2="122" />
+    <line class="table-grid" x1="0" y1="176" x2="744" y2="176" />
+    <line class="table-grid" x1="0" y1="230" x2="744" y2="230" />
+    <line class="table-grid" x1="0" y1="284" x2="744" y2="284" />
+    <line class="table-grid" x1="0" y1="338" x2="744" y2="338" />
+
+    <!-- Vertical Column Dividers: Item(72) | Part No.(136) | Part Name(300, wide for localization!) | Spec(156) | Qty(80) -->
+    <line class="table-grid" x1="72" y1="68" x2="72" y2="392" />
+    <line class="table-grid" x1="208" y1="68" x2="208" y2="392" />
+    <line class="table-grid" x1="508" y1="68" x2="508" y2="392" />
+    <line class="table-grid" x1="664" y1="68" x2="664" y2="392" />
+
+    <!-- Column Headers -->
+    <text x="36" y="53" font-size="11" font-weight="700" text-anchor="middle" class="text-inverse">Item / 序号</text>
+    <text x="140" y="53" font-size="11" font-weight="700" text-anchor="middle" class="text-inverse">Part No. / 代号</text>
+    <text x="224" y="53" font-size="11" font-weight="700" class="text-inverse">Part Name / 零件名称（预留多语种宽度）</text>
+    <text x="524" y="53" font-size="11" font-weight="700" class="text-inverse">Spec / 规格说明</text>
+    <text x="704" y="53" font-size="11" font-weight="700" text-anchor="middle" class="text-inverse">Qty / 数量</text>
+
+    <!-- Row 1 -->
+    <text x="36" y="100" font-size="12" font-weight="700" text-anchor="middle" class="text-primary">1</text>
+    <text x="140" y="100" font-size="11" text-anchor="middle" class="text-secondary">[ HW-A01 ]</text>
+    <text x="224" y="100" font-size="11" class="text-primary">[ Pan-Head Machine Screw · 盘头十字螺钉占位 ]</text>
+    <text x="524" y="100" font-size="11" class="text-secondary">[ M4 × 12 mm, Stainless ]</text>
+    <text x="704" y="100" font-size="12" font-weight="700" text-anchor="middle" class="text-primary">4</text>
+
+    <!-- Row 2 -->
+    <text x="36" y="154" font-size="12" font-weight="700" text-anchor="middle" class="text-primary">2</text>
+    <text x="140" y="154" font-size="11" text-anchor="middle" class="text-secondary">[ PT-102 ]</text>
+    <text x="224" y="154" font-size="11" class="text-primary">[ Upper Housing Cover · 上盖总成占位 ]</text>
+    <text x="524" y="154" font-size="11" class="text-secondary">[ Molded Enclosure ]</text>
+    <text x="704" y="154" font-size="12" font-weight="700" text-anchor="middle" class="text-primary">1</text>
+
+    <!-- Row 3 -->
+    <text x="36" y="208" font-size="12" font-weight="700" text-anchor="middle" class="text-primary">3</text>
+    <text x="140" y="208" font-size="11" text-anchor="middle" class="text-secondary">[ SL-204 ]</text>
+    <text x="224" y="208" font-size="11" class="text-primary">[ Perimeter Sealing Ring · 环形密封垫圈占位 ]</text>
+    <text x="524" y="208" font-size="11" class="text-secondary">[ Silicone, Ø90 mm ]</text>
+    <text x="704" y="208" font-size="12" font-weight="700" text-anchor="middle" class="text-primary">1</text>
+
+    <!-- Row 4 -->
+    <text x="36" y="262" font-size="12" font-weight="700" text-anchor="middle" class="text-primary">4</text>
+    <text x="140" y="262" font-size="11" text-anchor="middle" class="text-secondary">[ MD-301 ]</text>
+    <text x="224" y="262" font-size="11" class="text-primary">[ Core Functional Module · 核心功能组件占位 ]</text>
+    <text x="524" y="262" font-size="11" class="text-secondary">[ Replaceable Unit ]</text>
+    <text x="704" y="262" font-size="12" font-weight="700" text-anchor="middle" class="text-primary">1</text>
+
+    <!-- Row 5 -->
+    <text x="36" y="316" font-size="12" font-weight="700" text-anchor="middle" class="text-primary">5</text>
+    <text x="140" y="316" font-size="11" text-anchor="middle" class="text-secondary">[ PT-105 ]</text>
+    <text x="224" y="316" font-size="11" class="text-primary">[ Base Chassis Housing · 底座壳体占位 ]</text>
+    <text x="524" y="316" font-size="11" class="text-secondary">[ Main Support Base ]</text>
+    <text x="704" y="316" font-size="12" font-weight="700" text-anchor="middle" class="text-primary">1</text>
+
+    <!-- Row 6 -->
+    <text x="36" y="370" font-size="12" font-weight="700" text-anchor="middle" class="text-primary">6</text>
+    <text x="140" y="370" font-size="11" text-anchor="middle" class="text-secondary">[ HW-B02 ]</text>
+    <text x="224" y="370" font-size="11" class="text-primary">[ Side Locking Clip · 侧边固定卡扣占位 ]</text>
+    <text x="524" y="370" font-size="11" class="text-secondary">[ Snap-Fit Latch ]</text>
+    <text x="704" y="370" font-size="12" font-weight="700" text-anchor="middle" class="text-primary">2</text>
+  </g>
+
+  <!-- 5. Document Control / Spare Parts Footer -->
+  <g id="page-footer" class="sans">
+    <line class="divider" x1="48" y1="1084" x2="792" y2="1084" />
+    <text x="48" y="1112" font-size="10.5" class="text-secondary">[ Spare Parts &amp; Support Note · 如需订购替换件，请提供上方序号（Item）与零件代号（Part No.） ]</text>
+    <text x="48" y="1130" font-size="9.5" class="text-muted">[ Explanatory parts diagram template; not a dimensional manufacturing drawing ]</text>
+    <text x="792" y="1122" font-size="11" font-weight="600" text-anchor="end" class="text-secondary">Page 3 / N</text>
+  </g>
+</svg>

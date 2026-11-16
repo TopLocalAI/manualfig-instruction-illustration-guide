@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="148mm"
+     height="210mm"
+     viewBox="0 0 592 840"
+     role="img"
+     aria-labelledby="template-title template-desc">
+  <title id="template-title">Single-Step Instruction Page Template (A5 Portrait, 148 x 210 mm)</title>
+  <desc id="template-desc">Editable SVG layout template featuring a step number badge, hardware parts callout box, main illustration placeholder, magnified detail inset placeholder, action caption box with localization headroom, and completion check bar.</desc>
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      .sans {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+      }
+      .page-bg { fill: #FFFFFF; }
+      .safe-guide { fill: none; stroke: #E5E7EB; stroke-width: 1; stroke-dasharray: 4 4; }
+      .panel-border { fill: #FFFFFF; stroke: #374151; stroke-width: 1.5; }
+      .subbox-border { fill: #F9FAFB; stroke: #4B5563; stroke-width: 1.2; }
+      .placeholder-zone { fill: #F8FAFC; stroke: #94A3B8; stroke-width: 1.5; stroke-dasharray: 6 4; }
+      .placeholder-item { fill: #EEF2F6; stroke: #64748B; stroke-width: 1.2; stroke-dasharray: 4 3; }
+      .accent-fill { fill: #0F5C6E; }
+      .accent-ring { fill: #FFFFFF; stroke: #0F5C6E; stroke-width: 2; }
+      .leader-line { fill: none; stroke: #0F5C6E; stroke-width: 1.4; stroke-dasharray: 4 3; }
+      .halo-line { fill: none; stroke: #FFFFFF; stroke-width: 4.5; }
+      .divider { stroke: #D1D5DB; stroke-width: 1; }
+      .text-primary { fill: #111827; }
+      .text-secondary { fill: #4B5563; }
+      .text-muted { fill: #64748B; }
+      .text-inverse { fill: #FFFFFF; }
+      .text-accent { fill: #0F5C6E; }
+    ]]></style>
+  </defs>
+
+  <!-- 1. Solid White Page Background (Dark-Mode Safe) -->
+  <g id="page-background">
+    <rect class="page-bg" x="0" y="0" width="592" height="840" />
+    <!-- 8 mm (32 units) safe print margin guide; hide or delete before final export -->
+    <rect id="safe-margin-guide" class="safe-guide" x="32" y="32" width="528" height="776" rx="4" />
+  </g>
+
+  <!-- 2. Running Header -->
+  <g id="page-header" class="sans">
+    <text x="36" y="54" font-size="11" font-weight="600" class="text-secondary">[ PRODUCT / MODEL NAME · 产品型号占位 ]</text>
+    <text x="556" y="54" font-size="11" text-anchor="end" class="text-muted">[ Assembly Guide · 组装说明 ]</text>
+    <line class="divider" x1="36" y1="64" x2="556" y2="64" />
+  </g>
+
+  <!-- 3. Step Badge & Action Heading -->
+  <g id="step-header" class="sans">
+    <circle class="accent-fill" cx="60" cy="102" r="22" />
+    <text x="60" y="110" font-size="22" font-weight="700" text-anchor="middle" class="text-inverse">01</text>
+    <text x="94" y="99" font-size="16" font-weight="700" class="text-primary">[ Step Action Title · 单步核心动作标题占位 ]</text>
+    <text x="94" y="118" font-size="11.5" class="text-secondary">[ One primary physical action only · 本步仅表达一个核心动作 ]</text>
+  </g>
+
+  <!-- 4. Per-Step Hardware / Parts Callout Box -->
+  <g id="parts-callout-box" class="sans">
+    <rect class="subbox-border" x="36" y="138" width="520" height="96" rx="8" />
+    <text x="52" y="158" font-size="11" font-weight="700" class="text-primary">PARTS FOR THIS STEP · 本步所需零件 / 紧固件</text>
+
+    <!-- Part Slot A -->
+    <g id="part-slot-a">
+      <rect class="placeholder-item" x="52" y="168" width="68" height="52" rx="4" />
+      <text x="86" y="198" font-size="10" text-anchor="middle" class="text-muted">[ Part Icon ]</text>
+      <text x="130" y="187" font-size="13" font-weight="700" class="text-primary">A  ×4</text>
+      <text x="130" y="204" font-size="10.5" class="text-secondary">[ Ø8×30 mm Dowel ]</text>
+      <text x="130" y="218" font-size="10" class="text-muted">[ 规格/名称占位 ]</text>
+    </g>
+
+    <!-- Part Slot B -->
+    <g id="part-slot-b">
+      <line class="divider" x1="256" y1="166" x2="256" y2="222" />
+      <rect class="placeholder-item" x="272" y="168" width="68" height="52" rx="4" />
+      <text x="306" y="198" font-size="10" text-anchor="middle" class="text-muted">[ Part Icon ]</text>
+      <text x="350" y="187" font-size="13" font-weight="700" class="text-primary">B  ×2</text>
+      <text x="350" y="204" font-size="10.5" class="text-secondary">[ M6×16 Screw ]</text>
+      <text x="350" y="218" font-size="10" class="text-muted">[ 规格/名称占位 ]</text>
+    </g>
+
+    <!-- Tool / Person Cue Slot -->
+    <g id="tool-cue-slot">
+      <line class="divider" x1="462" y1="166" x2="462" y2="222" />
+      <rect class="placeholder-item" x="476" y="168" width="66" height="38" rx="4" />
+      <text x="509" y="191" font-size="9.5" text-anchor="middle" class="text-muted">[ Tool ]</text>
+      <text x="509" y="218" font-size="9.5" text-anchor="middle" class="text-secondary">[ 自备工具 ]</text>
+    </g>
+  </g>
+
+  <!-- 5. Main Step Illustration Area + Detail Magnifier Placeholder -->
+  <g id="main-illustration-panel" class="sans">
+    <rect class="panel-border" x="36" y="248" width="520" height="388" rx="10" />
+
+    <!-- Primary Isometric Figure Placeholder Rectangle -->
+    <rect id="main-figure-placeholder" class="placeholder-zone" x="56" y="268" width="332" height="348" rx="6" />
+    <line stroke="#CBD5E1" stroke-width="1" stroke-dasharray="4 4" x1="56" y1="268" x2="388" y2="616" />
+    <line stroke="#CBD5E1" stroke-width="1" stroke-dasharray="4 4" x1="388" y1="268" x2="56" y2="616" />
+    <rect x="108" y="408" width="228" height="68" rx="4" fill="#FFFFFF" opacity="0.92" />
+    <text x="222" y="435" font-size="12.5" font-weight="700" text-anchor="middle" class="text-primary">[ Main Step Illustration Area ]</text>
+    <text x="222" y="453" font-size="11" text-anchor="middle" class="text-secondary">主步骤线稿占位区（推荐等轴测固定机位）</text>
+    <text x="222" y="469" font-size="10" text-anchor="middle" class="text-muted">L1 轮廓 1.6pt · L2 结构 0.85pt · L3 引线 0.45pt</text>
+
+    <!-- Target Region Ring + White-Halo Leader to Detail Magnifier -->
+    <circle cx="318" cy="364" r="18" fill="none" stroke="#0F5C6E" stroke-width="1.6" stroke-dasharray="4 3" />
+    <line class="halo-line" x1="335" y1="358" x2="404" y2="338" />
+    <line class="leader-line" x1="335" y1="358" x2="404" y2="338" />
+
+    <!-- 2x-4x Magnified Detail Inset Placeholder -->
+    <g id="detail-magnifier-placeholder">
+      <circle class="accent-ring" cx="468" cy="338" r="66" />
+      <rect class="placeholder-item" x="424" y="294" width="88" height="88" rx="44" />
+      <text x="468" y="332" font-size="10.5" font-weight="700" text-anchor="middle" class="text-accent">[ 3× Detail ]</text>
+      <text x="468" y="348" font-size="9.5" text-anchor="middle" class="text-secondary">局部放大占位</text>
+      <text x="468" y="362" font-size="9" text-anchor="middle" class="text-muted">缺口 / 槽向 / 锁扣</text>
+    </g>
+
+    <!-- Completion State Verification Sub-Box -->
+    <g id="completion-state-box">
+      <rect class="subbox-border" x="404" y="432" width="134" height="184" rx="8" />
+      <circle class="accent-fill" cx="424" cy="452" r="10" />
+      <path d="M419.5 452 L422.8 455.3 L429 448.8" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="440" y="456" font-size="10.5" font-weight="700" class="text-primary">CHECK · 完成态</text>
+      <rect class="placeholder-item" x="416" y="470" width="110" height="96" rx="4" />
+      <text x="471" y="516" font-size="9.5" text-anchor="middle" class="text-muted">[ Flush / CLICK ]</text>
+      <text x="471" y="531" font-size="9.5" text-anchor="middle" class="text-muted">[ 到位状态图占位 ]</text>
+      <text x="471" y="586" font-size="9.5" text-anchor="middle" class="text-secondary">[ 端面齐平 / 锁紧确认 ]</text>
+      <text x="471" y="601" font-size="9" text-anchor="middle" class="text-muted">[ State cue placeholder ]</text>
+    </g>
+  </g>
+
+  <!-- 6. Action Caption Box (Includes 40%+ Whitespace Headroom for Localization) -->
+  <g id="caption-block" class="sans">
+    <rect class="subbox-border" x="36" y="652" width="520" height="108" rx="8" />
+    <text x="52" y="676" font-size="12" font-weight="700" class="text-primary">[ Action Instruction Caption · 步骤操作说明文字占位 ]</text>
+    <text x="52" y="697" font-size="11" class="text-secondary">1. [ Insert four dowels (A) straight into the inner holes until seated against the shoulder. ]</text>
+    <text x="52" y="716" font-size="11" class="text-secondary">2. [ 占位示例：将 4 颗木榫（A）垂直推入侧板内侧预钻孔，确认齐平无松动。 ]</text>
+    <text x="52" y="742" font-size="9.5" class="text-muted">[ Localization expansion reserve · 下方预留约 40% 多语言字符膨胀空间，切勿压扁字宽 ]</text>
+  </g>
+
+  <!-- 7. Footer: Motion Legend & Page Number -->
+  <g id="page-footer" class="sans">
+    <line class="divider" x1="36" y1="774" x2="556" y2="774" />
+    <!-- Straight Motion Arrow Sample -->
+    <path d="M40 792 L62 792" stroke="#0F5C6E" stroke-width="3" stroke-linecap="round" />
+    <polygon points="62,787 72,792 62,797" fill="#0F5C6E" />
+    <text x="78" y="796" font-size="10" class="text-secondary">[ Push / 推入 ]</text>
+
+    <!-- Curved Rotation Arrow Sample -->
+    <path d="M168 796 A10 6 0 1 1 188 790" fill="none" stroke="#0F5C6E" stroke-width="2.5" stroke-linecap="round" />
+    <polygon points="186,785 194,791 184,794" fill="#0F5C6E" />
+    <text x="202" y="796" font-size="10" class="text-secondary">[ Rotate / 旋转 ]</text>
+
+    <text x="556" y="796" font-size="10.5" font-weight="600" text-anchor="end" class="text-secondary">Page 1 / N</text>
+  </g>
+</svg>
