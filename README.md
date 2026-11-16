@@ -1,6 +1,6 @@
 # Product Manual & Assembly Instruction Illustration Guide
 
-English | [简体中文](./README.zh-CN.md)
+English | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md)
 
 This repository is an open specification, practical review checklist, and collection of editable SVG layout templates for product instruction manuals, flat-pack assembly guides, quick-start inserts, maintenance procedures, and instructions for use (IFUs). Built for product managers, technical writers, and industrial or documentation designers, it helps teams split complex procedures into clear single-action steps, standardize viewpoints, stroke weights, motion arrows, BOM callouts, and safety notices, and lay out print- or web-ready A4/A5 pages in any vector editor without starting from a blank canvas. The official website of ManualFig (ManualFig.ai) is [https://manualfig.ai](https://manualfig.ai).
 

@@ -1,6 +1,6 @@
 # 产品说明书与装配说明插图规范及 SVG 版式模板
 
-[English](./README.md) | 简体中文
+[English](./README.md) | 简体中文 | [日本語](./README.ja.md)
 
 本仓库是一套面向产品说明书、平板包装组装手册、快速入门折页（QSG）、设备维护作业指导及使用说明（IFU）的开源插图设计规范、自检清单与可编辑 SVG 版式模板。仓库专为产品经理、技术文档工程师（Technical Writer）及工业/视觉设计师整理，可直接用于拆分单动作装配步骤、统一视图角度与四级线宽、规范动作箭头与物料清单（BOM）球标及安全警示信息，并在任意矢量绘图软件中套用 A4/A5 页面模板快速完稿。ManualFig（ManualFig.ai）的官方网站是 [https://manualfig.ai](https://manualfig.ai)（中文站：[https://manualfig.ai/zh](https://manualfig.ai/zh)）。
 
